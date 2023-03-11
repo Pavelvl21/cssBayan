@@ -1,22 +1,39 @@
 .meme-input {
   display: none;
+
 }
 
 .meme-image {
   height: 0;
+  width: 0;
+
   opacity: 0;
   transition: all 1s 0.2s;
 }
 
+
+
 section:hover .meme-image {
-  height: 20rem;
+  width: 80%;
+  height: auto;
+
   opacity: 1;
-  transition: all 1s;
+  transition: all 1.5s, transform 2s;
 
 }
+section:active {
+  opacity: 0.7;
+}
+
 .meme-input:checked ~ .meme-label .meme-image {
-  height: 20rem;
+  width: 80%;
+  height: auto;
   opacity: 1;
+}
+
+.meme-label,
+.button  {
+  cursor: pointer;
 }
 
 container {
@@ -64,6 +81,7 @@ main {
   width: 70%;
   border-radius: 0.5rem;
 }
+
 .button {
   background-color: #fff;
   padding-left: 0;
