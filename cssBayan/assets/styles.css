@@ -33,7 +33,7 @@ section:active {
   height: auto;
   opacity: 1;
 }
-.meme-input:checked~.meme-label .text-title{
+.meme-input:checked~.meme-label .meme-text{
   color: inherit;
 }
 
@@ -116,6 +116,7 @@ section:hover .close-button {
 .open-button,
 .close-button {
   font-size: 2rem;
+  color: #0075B2;
 }
 
 .label-title {
@@ -124,11 +125,10 @@ section:hover .close-button {
 }
 
 
-container:hover  .text-title {
+container:hover  .meme-text {
   color: inherit;
-
 }
 
-.text-title {
+.meme-text {
   color: #0075B2;
 }
