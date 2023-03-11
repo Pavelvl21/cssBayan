@@ -55,9 +55,37 @@ main {
   flex-direction: column;
   border-bottom: 0.1rem solid #bdbbdb;
   padding: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .meme-image {
+  margin-top: 1rem;
   align-self: center;
   width: 70%;
   border-radius: 0.5rem;
+}
+.button {
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+
+  border: none;
+
+  text-align: start;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+
+}
+.button::before {
+  content: '+';
+}
+
+section:hover .button::before {
+  content: 'x';
+}
+
+.label-title {
+  display: flex;
+  justify-content: space-between;
 }
