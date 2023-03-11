@@ -3,6 +3,8 @@
 
 }
 
+
+
 .meme-image {
   height: 0;
   width: 0;
@@ -23,12 +25,16 @@ section:hover .meme-image {
 }
 section:active {
   opacity: 0.7;
+  color: #0075B2;
 }
 
 .meme-input:checked ~ .meme-label .meme-image {
   width: 80%;
   height: auto;
   opacity: 1;
+}
+.meme-input:checked~.meme-label .text-title{
+  color: inherit;
 }
 
 .meme-label,
@@ -107,4 +113,14 @@ section:hover .button::before {
 .label-title {
   display: flex;
   justify-content: space-between;
+}
+
+
+container:hover  .text-title {
+  color: inherit;
+
+}
+
+.text-title {
+  color: #0075B2;
 }
