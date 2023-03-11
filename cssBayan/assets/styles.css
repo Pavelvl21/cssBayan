@@ -60,6 +60,7 @@
   align-self: center;
   width: 0;
   height: 0;
+  padding-top: 1rem;
   border-radius: 0.5rem;
   opacity: 0;
   transition: all 1s 0.2s;
@@ -98,10 +99,14 @@
 }
 
 .meme-title {
+  width: 100%;
   align-self: self-start;
+  border-bottom: 0.1rem solid #bdbbdb;
 }
 
 .meme-text {
+  margin: 0;
+  padding-top: 1rem;
   color: #0075B2;
 }
 
