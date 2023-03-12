@@ -59,7 +59,11 @@
 .section:active .button-svg {
   fill: #0075B2 !important;
   opacity: 0.7;
-  transition: all 0s;
+  transition: all 1s;
+}
+
+.section:active .meme-image {
+  opacity: 0.7 !important;
 }
 
 .meme-image-container {
