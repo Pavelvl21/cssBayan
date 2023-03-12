@@ -56,6 +56,14 @@
   opacity: 0.7;
 }
 
+.meme-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  align-self: center;  
+}
+
 .meme-image {
   align-self: center;
   width: 0;
@@ -73,10 +81,6 @@
   border-bottom: 0.1rem solid #bdbbdb;
 }
 
-.meme-image {
-  width: 60%;
-}
-
 @media (hover: hover) {
   .section:hover .open-button {
     display: none;
@@ -84,7 +88,7 @@
 
   .section:hover .meme-image {
     width: 70%;
-    height: auto;
+      height: 0%;
     opacity: 1;
     transition: all 1.5s;
   }
@@ -115,8 +119,8 @@
 }
 
 .meme-input:checked~.meme-label .meme-image {
-  width: 80%;
-  height: auto;
+  width: 70%;
+  height: 70%;
   opacity: 1;
 }
 
