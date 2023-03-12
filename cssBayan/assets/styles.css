@@ -81,23 +81,24 @@
   border-bottom: 0.1rem solid #bdbbdb;
 }
 
-@media (hover: hover) {
-  .section:hover .open-button {
-    display: none;
-  }
+.button-svg {
+  fill: #0075B2;
+}
 
+@media (hover: hover) {
   .section:hover .meme-image {
     width: 70%;
-      height: 0%;
+    height: 70%;
     opacity: 1;
     transition: all 1.5s;
   }
 
-  .section:hover .close-button {
-    display: block;
+  .section:hover .meme-text {
+    color: inherit;
   }
 
-  .section:hover .meme-text {
+  .section:hover .button-svg {
+    transform: rotate(45deg);
     color: inherit;
   }
 }
@@ -146,14 +147,4 @@
   text-align: start;
   text-decoration: none;
   font-size: 1.5rem;
-}
-
-.close-button {
-  display: none;
-}
-
-.open-button,
-.close-button {
-  font-size: 2rem;
-  color: #0075B2;
 }
