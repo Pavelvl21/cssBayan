@@ -1,0 +1,166 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 568px) {
+  .body {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .body {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .body {
+    font-size: 1.5rem !important;
+  }
+}
+
+.main {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 1rem;
+  background-color: #455a64;
+  border-radius: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  color: #0075B2;
+}
+
+.meme-title {
+  color: #000;
+}
+
+.section {
+  width: 80%;
+}
+
+.section:active .meme-text {
+  color: #0075B2 !important;
+  opacity: 0.7;
+}
+
+.section:active .button-svg {
+  fill: #0075B2 !important;
+  opacity: 0.7;
+  transition: all 0s !important
+}
+
+.section:active .meme-image {
+  opacity: 0.7 !important;
+  transition: all 0s !important;
+}
+
+.meme-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;  
+}
+
+.meme-image {
+  align-self: center;
+  width: 0;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity, width 1s;
+}
+
+.meme-label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #bdbbdb;
+}
+
+.button-svg {
+  display: none;
+}
+
+@media (hover: hover) {
+  .container:hover {
+    color: #000;
+  }
+
+  .container:hover .button-svg {
+    display: block;
+    fill: #000;
+    transition: all 1s;
+  }
+
+  .section:hover .meme-image {
+    width: 80%;
+    opacity: 1;
+    transition: all 1s;
+  }
+
+  .section:hover .meme-text,
+  .section:hover .button-svg {
+    color: #000;
+    fill: #000;
+  }
+
+  .section:hover .button-svg {
+    transform: rotate(45deg);
+  }
+}
+
+.meme-title {
+  width: 80%;
+  border-bottom: 0.1rem solid #bdbbdb;
+}
+
+.meme-text {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.meme-input {
+  display: none;
+}
+
+.meme-input:checked~.meme-label .meme-image {
+  width: 80%;
+  opacity: 1;
+}
+
+.meme-input:checked~.meme-label .meme-text {
+  color: #000;
+}
+
+.label-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme-label,
+.button {
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  text-align: start;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
